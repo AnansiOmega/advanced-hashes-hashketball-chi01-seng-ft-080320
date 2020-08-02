@@ -151,6 +151,7 @@ big_foot
 end
 
 def team_colors(name)
+<<<<<<< HEAD
   colors = []
   game_hash.each do |k,v|
     if v[:team_name] == name
@@ -202,3 +203,18 @@ def big_shoe_rebounds
       end
   end
 end
+=======
+  game_hash.each do |k,v|
+     game_hash.each do |k,v|
+    v[:players].each do |key|
+     if key[:player_name] == name
+       binding.pry
+     end
+    end
+  end
+      
+    
+  end
+    
+end
+>>>>>>> 8e1014b0406725eea118de1a4d4d01569c311483
